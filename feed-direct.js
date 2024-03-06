@@ -15,10 +15,6 @@
             data.items.forEach(function(item) {
                             var card = '<div class="card">' +
                            '<h2>' + item.title + '</h2>';
-                          
-                          if (item.enclosure) {
-                            card += '<img src="' + item.enclosure + '" alt="Image">';
-                          }
             
                           card += '<p>' + item.description + '</p>' +
                                   '<p>' + item.pubDate + '</p>' +
