@@ -13,7 +13,7 @@
             // Parse and display feed content
             var feedContainer = $('#feed-container');
             data.items.forEach(function(item) {
-              var card = '<div class="card">' +
+              var card = '<div class="card"><a href="' + item.link + '" target="_blank">' +
                            '<h2>' + item.title + '</h2>';
               
               if (item.enclosure.link) {
@@ -21,8 +21,7 @@
               }
 
               card += '<p>' + item.description + '</p>' +
-                      '<a href="' + item.link + '" target="_blank">Read more</a>' +
-                      '</div>';
+                      '</a></div>';
               feedContainer.append(card);
             });
           } else {
