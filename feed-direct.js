@@ -24,7 +24,6 @@
                       '<a href="' + item.link + '" target="_blank">Read more</a>' +
                       '</div>';
               feedContainer.append(card);
-              console.log(item);
             });
           } else {
             console.error('Error fetching feed:', data.message);
