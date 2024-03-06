@@ -17,7 +17,7 @@
                            '<h2>' + item.title + '</h2>';
               
               if (item.enclosure.link) {
-                card += '<img style="width: 13opx, border-radius: 0.25rem;" size src="' + item.enclosure.link + '" alt="Image">';
+                card += '<img style="width: 130px; border-radius: 0.25rem;" size src="' + item.enclosure.link + '" alt="Image">';
               }
 
               card += '<p>' + item.description + '</p>' +
