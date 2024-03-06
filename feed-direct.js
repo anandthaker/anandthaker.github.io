@@ -14,7 +14,7 @@
             var feedContainer = $('#feed-container');
             data.items.forEach(function(item) {
               var card = '<div class="card">' +
-                           '<h2>' + item.title + '</h2>';
+                           '<h2>' + item.title + item.enclosure.link + '</h2>';
               
               if (item.enclosure.link) {
                 card += '<img src="' + item.enclosure.link + '" alt="Image">';
