@@ -17,7 +17,7 @@
                            '<h2>' + item.title + 'asdfasfa' + item.enclosure.link + 'asfasdf</h2>';
               
               if (item.enclosure.link) {
-                card += '<img src="' + item.enclosure.link + '" alt="Image">';
+                card += '<img style="width: 13opx, border-radius: 0.25rem;" size src="' + item.enclosure.link + '" alt="Image">';
               }
 
               card += '<p>' + item.description + '</p>' +
