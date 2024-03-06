@@ -13,14 +13,18 @@
             // Parse and display feed content
             var feedContainer = $('#feed-container');
             data.items.forEach(function(item) {
-                            var card = '<div class="card">' +
+              var card = '<div class="card">' +
                            '<h2>' + item.title + '</h2>';
-            
-                          card += '<p>' + item.description + '</p>' +
-                                  '<p>' + item.pubDate + '</p>' +
-                                  '<a href="' + item.link + '" target="_blank">Read more</a>' +
-                                  '</div>';
+              
+              if (item.enclosure.link) {
+                card += '<img src="' + item.enclosure.link + '" alt="Image">';
+              }
+
+              card += '<p>' + item.description + '</p>' +
+                      '<a href="' + item.link + '" target="_blank">Read more</a>' +
+                      '</div>';
               feedContainer.append(card);
+              console.log(item);
             });
           } else {
             console.error('Error fetching feed:', data.message);
