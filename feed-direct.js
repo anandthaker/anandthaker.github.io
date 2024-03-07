@@ -18,7 +18,7 @@
             var months = Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec");
             var strDate = months[date.getMonth()] + ", "+ date.getDate() + " " + date.getFullYear();
             
-              var card = '<div style="font-family: font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; margin-bottom:15px; margin-bottom: 15px;">' +
+              var card = '<div style="font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; margin-bottom: 15px;">' +
                               '<a style="text-decoration: none; color: black;" href="' + item.link + '" target="_blank">' +
                                   '<div style="font-weight: 700; font-size: 1.125rem; line-height: 1.75rem;">' + item.title + '</div>' + 
                                   '<img style="float: left; margin: 0 15px 0 0; width: 200px; border-radius: 0.5rem; display: block; " src="' + item.enclosure.link + '" alt="Image">' + 
