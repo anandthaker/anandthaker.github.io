@@ -20,10 +20,10 @@
             
               var card = '<div style="font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; margin-bottom: 15px;">' +
                               '<a style="text-decoration: none; color: black;" href="' + item.link + '" target="_blank">' +
-                                  '<div style="font-weight: 700; font-size: 1.125rem; line-height: 1.75rem;">' + item.title + '</div>' + 
-                                  '<img style="float: left; margin: 0 15px 0 0; width: 200px; border-radius: 0.5rem; display: block; " src="' + item.enclosure.link + '" alt="Image">' + 
-                                  '<p style="font-weight: 100;color: #707070;line-height: 1.5rem;">' + item.description + '</p>' +
-                                  '<p style="font-weight: 100;color: #707070;line-height: 1.5rem;">' + strDate + '</p>' +
+                              '<img style="float: left; margin: 0 15px 0 0; width: 200px; border-radius: 0.5rem; display: block; " src="' + item.enclosure.link + '" alt="Image">' + 
+                              '<div style="font-weight: 700; font-size: 1.125rem; line-height: 1.75rem;">' + item.title + '</div>' +     
+                                '<p style="font-weight: 100;color: #707070;line-height: 1.5rem;">' + item.description + '</p>' +
+                                '<p style="font-weight: 100;color: #707070;line-height: 1.5rem;">' + strDate + '</p>' +
                               '</a>' + 
                           '</div>';
               feedContainer.append(card);
