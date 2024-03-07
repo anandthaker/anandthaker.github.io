@@ -14,14 +14,10 @@
             var feedContainer = $('#feed-container');
             data.items.forEach(function(item) {
               var card = '<div class="card"><a href="' + item.link + '" target="_blank">' +
-                           '<h2>' + item.title + '</h2>';
-              
-              if (item.enclosure.link) {
-                card += '<img style="width: 130px; border-radius: 0.25rem; display: block;" size src="' + item.enclosure.link + '" alt="Image">';
-              }
-
-              card += '<p>' + item.description + '</p>' +
-                      '</a></div>';
+                          '<div style="font-weight: 700; font-size: 1.125rem; line-height: 1.75rem; font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;">' + item.title + '</div>' + 
+                          '<img style="width: 130px; border-radius: 0.25rem; display: block;" size src="' + item.enclosure.link + '" alt="Image">' + 
+                          '<div>' + item.description + '</div>' +
+                          '</a></div>';
               feedContainer.append(card);
             });
           } else {
